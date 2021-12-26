@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* Estil basic de la pàgina que es aplicat a tota la pàgina. */
+
+.footer {
+  @apply flex flex-col justify-between text-center w-full;
+}
+.sub-footer1 {
+  @apply flex flex-col text-center;
+}
+.sub-footer2 {
+  @apply flex flex-col text-center w-full;
+}
+.sub-footer3 {
+  @apply flex flex-col text-center;
+}
+.footer-menu {
+  @apply flex flex-col text-center;
+}
+.footer-icon-menu {
+  @apply flex flex-row text-center justify-between;
+}
+@media (min-width: 792px) {
+  .sub-footer2,
+  .footer-menu,
+  .footer-icon-menu {
+    @apply flex flex-row text-center justify-between;
+  }
+  .footer-menu {
+    @apply w-full pt-4 pr-8 pb-4 pl-4 mt-16;
+  }
+  .footer-icon-menu {
+    @apply w-2/6 pt-4 pr-8 pb-4 pl-4 mt-16;
+  }
+}
+@media (min-width: 792px) {
+  .sub-footer3 {
+    @apply flex flex-row items-start justify-between;
+  }
+}
+
+.img-fluid {
+  @apply max-w-full h-auto block mr-auto ml-auto;
+}
+
+.webkit {
+  text-align: -webkit-center;
+}
